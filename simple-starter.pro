@@ -2,9 +2,9 @@ TEMPLATE = app
 
 QT += qml quick widgets
 
-SOURCES += main.cpp \
-    startup.cpp \
-    mainviewmgr.cpp
+SOURCES += src/main.cpp \
+    src/startup.cpp \
+    src/mainviewmgr.cpp
 
 CONFIG += c++11
 
@@ -17,6 +17,8 @@ QML_IMPORT_PATH =
 include(deployment.pri)
 
 HEADERS += \
-    startup.h \
-    mainviewmgr.h
+    src/startup.h \
+    src/mainviewmgr.h
+
+DISTFILES +=
 
